@@ -12,7 +12,9 @@ A modern, fully responsive e‑commerce frontend built with **React** and **Boot
 
 ## ✨ Live Demo
 
-> **Live Demo:** *Coming soon*
+
+
+**Try it now:** [https://jomol2003.github.io/ecommerce](https://jomol2003.github.io/ecommerce)
 
 ---
 

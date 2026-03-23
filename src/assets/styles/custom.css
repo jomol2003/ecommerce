@@ -1,0 +1,325 @@
+/* Custom styles on top of Bootstrap */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .bg-light,
+body.dark-mode .card,
+body.dark-mode .list-group-item,
+body.dark-mode .footer {
+  background-color: #2c2c2c !important;
+  color: #f0f0f0 !important;
+  border-color: #444 !important;
+}
+
+body.dark-mode .text-muted {
+  color: #aaa !important;
+}
+
+main {
+  min-height: 80vh;
+  padding: 20px 0;
+}
+
+.product-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.product-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+body.dark-mode .footer {
+  background-color: #1e1e1e !important;
+  color: #f0f0f0;
+}
+
+.footer a:hover {
+  color: #ffc107 !important;
+  text-decoration: underline !important;
+}
+/* Wishlist heart */
+.wishlist-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #1d9974;
+  transition: transform 0.2s;
+}
+
+.wishlist-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Badges */
+.product-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+/* Star rating */
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+/* Dark mode toggle */
+.theme-toggle {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+body.dark-mode .bg-light {
+  background-color: #2c2c2c !important;
+  border-color: #444 !important;
+}
+
+body.dark-mode .bg-light .nav-link {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .bg-light .nav-link:hover {
+  color: #fff !important;
+  background-color: #444;
+}
+
+body.dark-mode .dropdown-menu {
+  background-color: #2c2c2c;
+  border-color: #444;
+}
+
+body.dark-mode .dropdown-item {
+  color: #f0f0f0;
+}
+
+body.dark-mode .dropdown-item:hover {
+  background-color: #444;
+  color: #fff;
+}
+/* Consistent button colors */
+/* Gold buttons for product cards */
+.btn-gold {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+}
+.btn-gold:hover {
+  background-color: #e0a800;
+  border-color: #e0a800;
+  color: #212529;
+}
+
+.btn-outline-gold {
+  color: #ffc107;
+  border-color: #ffc107;
+  background-color: transparent;
+}
+.btn-outline-gold:hover {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+}
+
+/* Price text in gold */
+.text-gold {
+  color: #ffc107 !important;
+}
+
+/* Wishlist heart */
+.wishlist-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  transition: transform 0.2s;
+  padding: 0;
+  line-height: 1;
+}
+.wishlist-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Badge styling */
+.badge.bg-warning {
+  background-color: #ff9800 !important;
+  color: #000;
+}
+.badge.bg-info {
+  background-color: #17a2b8 !important;
+  color: #fff;
+}
+.badge.bg-secondary {
+  background-color: #6c757d !important;
+}
+/* Section headings */
+/* Section headings – modern style */
+.section-heading {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #212529;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+/* Optional: underline effect */
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #20c997;
+  border-radius: 2px;
+}
+
+/* Dark mode adjustments */
+body.dark-mode .section-title {
+  color: #f0f0f0;
+}
+body.dark-mode .section-subtitle {
+  color: #adb5bd;
+}
+body.dark-mode .section-heading::after {
+  background: #20c997;
+}
+/* Dark mode support */
+body.dark-mode .section-heading h3 {
+  color: #f0f0f0;
+}
+body.dark-mode .section-heading p {
+  color: #adb5bd;
+}
+body.dark-mode .section-heading {
+  border-left-color: #20c997;
+}
+/* Hero banner with Swiper */
+.hero-banner {
+  position: relative;
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero-swiper {
+  width: 100%;
+  height: auto;
+}
+
+.slide-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Navigation arrows – grey, transparent background */
+.hero-swiper .swiper-button-next,
+.hero-swiper .swiper-button-prev {
+  width: 44px;
+  height: 44px;
+  background: transparent;   /* no background */
+  transition: all 0.3s;
+}
+
+.hero-swiper .swiper-button-next::after,
+.hero-swiper .swiper-button-prev::after {
+  font-size: 28px;
+  font-weight: bold;
+  color: #6c757d;            /* grey color */
+  transition: color 0.3s;
+}
+
+.hero-swiper .swiper-button-next:hover::after,
+.hero-swiper .swiper-button-prev:hover::after {
+  color: #495057;            /* darker grey on hover */
+}
+/* Swiper pagination dots */
+/* Pagination dots - grey, active black */
+.hero-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #adb5bd;       /* grey */
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background: #212529;       /* black/dark grey */
+  opacity: 1;
+  width: 24px;               /* optional: makes active dot longer */
+  border-radius: 5px;        /* pill shape for active */
+}
+/* Dark mode adjustments */
+body.dark-mode .hero-banner {
+  background: #2c2c2c;
+}
+.hero-banner-wrapper {
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.hero-swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
